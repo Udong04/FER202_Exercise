@@ -1,4 +1,4 @@
-function Ex5() {
+function Ex6() {
   const randomNumber = () => {
     return new Promise((resolve, reject) => {
       const number = Math.floor(Math.random() * 10) + 1;
@@ -32,4 +32,4 @@ function Ex5() {
   );
 }
 
-export default Ex5;
+export default Ex6;
