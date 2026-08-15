@@ -1,0 +1,250 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #f4f5f7;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.main-title {
+  text-align: center;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 50px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.exercise-section {
+  margin-bottom: 60px;
+}
+
+.exercise-section h2 {
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+.description {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   CONTROL CARD
+========================= */
+
+.control-card {
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   EXERCISE CARD
+========================= */
+
+.exercise-card {
+  border: none;
+  border-radius: 8px;
+  background-color: #292d35;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   QUESTION 1
+========================= */
+
+.user-badge {
+  background-color: #0d6efd;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.post-card {
+  background-color: #343942;
+  color: white;
+  border: 1px solid #454b55;
+}
+
+.post-card .card-title {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.post-card .card-text {
+  color: #c7cbd1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.post-number {
+  color: #6ea8fe;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* =========================
+   QUESTION 2
+========================= */
+
+.countdown-card {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-circle {
+  width: 150px;
+  height: 150px;
+  border: 7px solid #0d6efd;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+}
+
+.timer-circle span {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   QUESTION 3
+========================= */
+
+.resize-icon {
+  font-size: 60px;
+  color: #0d6efd;
+}
+
+.size-display {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 25px;
+}
+
+.size-display div {
+  display: flex;
+  flex-direction: column;
+}
+
+.size-display span {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+.size-display strong {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+
+/* =========================
+   QUESTION 4
+========================= */
+
+.input-error {
+  border: 2px solid #dc3545 !important;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #75d69c;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .size-display {
+    gap: 30px;
+  }
+
+  .size-display strong {
+    font-size: 22px;
+  }
+
+  .timer-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .timer-circle span {
+    font-size: 40px;
+  }
+}

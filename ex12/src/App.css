@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 700;
+  color: #212529;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+section > p {
+  color: #555;
+}
+
+
+/* Card chung cho từng bài */
+.exercise-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #292d35;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  min-height: 180px;
+  padding: 20px;
+}
+
+
+/* Bài 2 */
+.input-box {
+  max-width: 450px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+
+/* Bài 4 */
+.todo-box {
+  max-width: 400px;
+  margin-left: auto;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.todo-box .list-group-item {
+  border: 1px solid #ddd;
+}
+
+
+/* Bài 5 */
+.color-box {
+  width: 180px;
+  height: 130px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ddd;
+}
+
+
+/* Bài 7 */
+.drag-item {
+  cursor: grab;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 18px;
+  color: #212529;
+}
+
+.drag-item:active {
+  cursor: grabbing;
+}
+
+.dragging-item {
+  opacity: 0.5;
+  cursor: grabbing;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .exercise-card {
+    padding: 15px;
+  }
+
+  .color-box {
+    margin-top: 20px;
+  }
+}
